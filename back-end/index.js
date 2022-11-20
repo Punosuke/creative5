@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('mongodb+srv://andytakahiro:Cyndaquil0428@cluster0.tvlx1eh.mongodb.net/requests', {
+mongoose.connect('mongodb+srv://*****', {
   useUnifiedTopology: true,
   useNewUrlParser: true
 });
