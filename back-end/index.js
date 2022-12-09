@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('mongodb+srv://*****', {
+mongoose.connect('***', {
   useUnifiedTopology: true,
   useNewUrlParser: true
 });
@@ -30,7 +30,7 @@ requestSchema.set('toJSON', {
   virtuals: true
 });
 
-// create a model for tickets
+// create a model for ticketss
 const Request = mongoose.model('Request', requestSchema);
 
 app.get('/api/requests', async (req, res) => {
